@@ -67,6 +67,7 @@ type C2Parameter struct {
 	Description       string                  `json:"description"`
 	Name              string                  `json:"name"`
 	DisplayName       string                  `json:"display_name"`
+	GroupName         string                  `json:"group_name"`
 	DefaultValue      interface{}             `json:"default_value"`
 	Randomize         bool                    `json:"randomize"`
 	FormatString      string                  `json:"format_string"`
