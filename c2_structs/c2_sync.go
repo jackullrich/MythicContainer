@@ -79,6 +79,7 @@ type C2Parameter struct {
 	ChoicesDisplayNames map[string]string       `json:"choices_display_names"`
 	DictionaryChoices   []C2ParameterDictionary `json:"dictionary_choices"`
 	UiPosition          int                     `json:"ui_position"`
+	FormSchema          map[string]interface{}  `json:"form_schema"`
 }
 
 type C2ParameterDictionary struct {
