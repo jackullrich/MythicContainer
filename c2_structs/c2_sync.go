@@ -75,9 +75,10 @@ type C2Parameter struct {
 	Required          bool                    `json:"required"`
 	VerifierRegex     string                  `json:"verifier_regex"`
 	IsCryptoType      bool                    `json:"crypto_type"`
-	Choices           []string                `json:"choices"`
-	DictionaryChoices []C2ParameterDictionary `json:"dictionary_choices"`
-	UiPosition        int                     `json:"ui_position"`
+	Choices             []string                `json:"choices"`
+	ChoicesDisplayNames map[string]string       `json:"choices_display_names"`
+	DictionaryChoices   []C2ParameterDictionary `json:"dictionary_choices"`
+	UiPosition          int                     `json:"ui_position"`
 }
 
 type C2ParameterDictionary struct {
